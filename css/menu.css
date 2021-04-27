@@ -1,0 +1,58 @@
+.menuBox {
+  display: flex;
+  margin-top: 7px;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+.linkBox {
+  position: relative;
+  margin-right: 10px;
+}
+
+.linkContainer {
+  position: absolute;
+  top: 30px;
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.linkBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addLink {
+  cursor: pointer;
+}
+
+.js-linkName .js-linkUrl {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuBox .btnChrome {
+  color: #ffffff;
+}
+
+.menuBox{
+  font-size: 22px;
+}
+
+.linklist{ /*todo*/
+  display: flex;
+  align-items: center;
+}
+.text {
+  cursor: pointer;
+}
+.modifyForm {
+  display: none;
+  /* border-bottom: none; */
+}

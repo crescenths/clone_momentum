@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- 초기 화면 배율 설정 -->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge" />--> <!-- edge mode, IE 버전 중 가장 최신 모드로 표시 -->
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 날씨 -->
+    <div class="weatherBox">
+      <div class="weatherBox__column">
+        <div class="weather__information">
+          <i id="weatherIcon"></i>
+          <span class="js-weather"></span>
+        </div>
+        <span class="js-temperature"></span>
+        <!-- 메뉴 -->
+        <div class="menuBox">
+          <div class="linkBox">
+            <i class="fas fa-link"></i>
+            <div class="linkContainer">
+              <div class="linkBtns">
+                <span class="addLink">링크 추가</span>
+                <span class="cancelBtn removed">
+                  <i class="fas fa-times"></i>
+                </span>
+                <ul class="js-linkShow">링크 목록</ul>
+              </div>
+              <form class="js-linkName removed">
+                <input type="text" placeholder="NAME" />
+              </form>
+              <form class="js-linkUrl removed">
+                <input type="text" placeholder="URL" />
+              </form>
+            </div>
+          </div>
+          <a class="btnChrome" href="https://google.com" target="_blank">
+            <i class="fab fa-chrome"></i>
+          </a>
+        </div>
+      </div>
+      <div class="locationBox__column">
+       <div class="country__information">
+          <span class="js-country"></span>
+        </div>
+        <span class="js-location"></span>
+      </div>
+    </div>
+    <!-- 시계 기능 -->
+    <div class="js-clock">
+      <h1 class="time">00:00:00</h1>
+    </div>
+    <!-- 유저 환영 -->
+    <div class="js-greetingBox">
+    <!-- 유저 네임 저장 -->
+    <div class="js-greetings__header">
+      <span class="js-greetings greetings"></span>
+      <span class="js-username username"></span>
+    </div>
+    <form class="js-form form">
+      <input type="text" placeholder="✓  What is your name?" />
+    </form>
+    </div>
+    <!-- 오늘의 목표(focus) -->
+    <div class="js-focusBox">
+      <form class="js-focusForm form">
+        <input type="text" placeholder="✓  What is your main focus for today?" />
+      </form>
+      <h5 class="js-focus focus"></h5>
+    </div>
+    <!-- 할 일 리스트 -->
+    <div class="js-toDoBox">
+      <form class="js-toDoForm">
+        <input type="text" placeholder="✓  To Do List" />
+      </form>
+      <ul class="js-toDoList"></ul>
+    </div>
+    <!-- js import -->
+    <script src="js/weather.js"></script>
+    <script src="js/link.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/focus.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+  </body>
+</html>
